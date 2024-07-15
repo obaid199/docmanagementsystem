@@ -11,7 +11,7 @@ const DocViewerWithInput = () => {
             setSelectedDocs(Array.from(e.target.files));
         }
     };
-
+    //code for pdf file
     const renderDocument = (doc) => {
         if (doc.fileName.endsWith('.pdf')) {
             return <PdfViewerWithAnnotations key={doc.uri} url={doc.uri} />;
